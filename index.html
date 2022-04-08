@@ -1,0 +1,80 @@
+
+<link  href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"type="text/css">
+
+<style>
+  .red-text{
+    color: red;
+}
+  .thick-green-border{
+    border-style: solid;
+    border-width: 10px;
+    border-color: green;
+  }
+  .silver-background{
+    background-color: silver;
+  }
+  .smaller-image{
+    width: 100px;
+    border-radius: 50%
+  }
+  #cat-photo-form{
+    background-color: green;
+
+  }
+  p{
+    font-size: 16px;
+    font-family: monospace;
+  }
+  h2{
+    font-family: lobster;
+    font: italic;
+  }
+  [type='checkbox']{
+      margin: 10px 0px 15px;
+    }
+
+
+</style>
+
+
+<h2 class="red-text" >CatPhotoApp</h2>
+<main>
+  <p class="red-text" >Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class=" thick-green-border smaller-image" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+  
+  <div class="silver-background">
+  <div> 
+    <p>Things cats love:</p>
+  </div>
+  
+  <div>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+  </div>
+
+  <div>
+    <p>Top 3 things cats hate:</p>
+  
+</div>
+  <div>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+  </div>
+</div>
+  <form id="cat-photo-form" action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked > Indoor</label>
+    <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality" checked > Loving</label>
+    <label for="lazy"><input id="lazy"  value="lazy" type="checkbox" name="personality"> Lazy</label>
+    <label for="energetic"><input id="energetic" value="energetic" type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</main>
